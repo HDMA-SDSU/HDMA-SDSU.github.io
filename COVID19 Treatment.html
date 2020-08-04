@@ -3,12 +3,23 @@
 
 <head>
 
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-165599329-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-165599329-1');
+  </script>
+
+
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Modern Business - Start Bootstrap Template</title>
+  <title>COVID-19 Research Hub by the HDMA Center, San Diego State University</title>
 
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -23,31 +34,35 @@
   <!-- Navigation -->
   <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top">
     <div class="container">
-      <a class="navbar-brand" href="index.html">HDMA@SDSU</a>
+      <a class="navbar-brand" href="index.html"><img src="img\HDMA-logo-2.png" height="50"></a>
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
+<!--          <li class="nav-item">
             <a class="nav-link" href="about.html">About</a>
-          </li>
+          </li>-->
 <!--          <li class="nav-item">
             <a class="nav-link" href="services.html">Services</a>
           </li>-->
-          <li class="nav-item">
-            <a class="nav-link" href="contact.html">Contact</a>
-          </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownPortfolio" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               Projects
             </a>
             <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownPortfolio">
+              <a class="dropdown-item" href="COVID19 testing sites.html">COVID-19 Testing Sites</a>
+              <a class="dropdown-item" href="COVID19 tracing cases.html">COVID-19 Tracing Cases</a>
+              <a class="dropdown-item" href="COVID19 Treatment.html">COVID-19 Treatment</a>
               <a class="dropdown-item" href="vulnerability_maps.html">Vulnerability Maps</a>
               <a class="dropdown-item" href="analytics_dashboard.html">Analytics Dashboard</a>
+              <a class="dropdown-item" href="health resources maps.html"> Health Resources Maps</a>
               <a class="dropdown-item" href="maps_hub-san_diego.html">Maps Hub- San Diego</a>
+              <a class="dropdown-item" href="san diego neighborhood regions covid19 updates.html">San Diego Neighborhood Regions COVID-19 Updates</a>
+              <a class="dropdown-item" href="international collaboration.html">International Collaboration (Crowdfight COVID-19)</a>
               <a class="dropdown-item" href="sharing_data.html">Sharing Data</a>
-              <a class="dropdown-item" href="other_map_and_data_sources.html">Other Map and Data Sources</a>
+              <a class="dropdown-item" href="sharing_videos_and_slides.html">Sharing Videos and Slides</a>
+              <a class="dropdown-item" href="other_maps.html">Other Maps</a>
             </div>
           </li>
           <li class="nav-item dropdown">
@@ -56,9 +71,12 @@
             </a>
             <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownBlog">
 <!--              <a class="dropdown-item" href="blog-home-1.html">Blog Home 1</a>-->
-              <a class="dropdown-item" href="coronavirus_updates.html">COVID-19 Research Updates</a>
-<!--              <a class="dropdown-item" href="blog-post.html">Blog Post</a>-->
+              <a class="dropdown-item" href="research_updates.html">Research Updates</a>
+              <a class="dropdown-item" href="img\4-27-20 Big Data and COVID-19 Ming-Hsiang Tsou.pdf" target="_blank">Using GIS and Big Data for COVID19.pdf</a>
             </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
           </li>
 <!--          <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownBlog" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -81,50 +99,64 @@
   <div class="container">
 
     <!-- Page Heading/Breadcrumbs -->
-    <h1 class="mt-4 mb-3">Sidebar Page
-      <small>Subheading</small>
+    <h1 class="mt-4 mb-3">COVID-19 Treatment
+      <small>A collection of resources concerning COVID-19 treatment, including hospitalization, death records, etc. </small>
     </h1>
 
     <ol class="breadcrumb">
       <li class="breadcrumb-item">
         <a href="index.html">Home</a>
       </li>
-      <li class="breadcrumb-item active">About</li>
+      <li class="breadcrumb-item active">COVID-19 Treatment</li>
     </ol>
 
-    <!-- Content Row -->
+    <!-- Portfolio Item Row -->
+
     <div class="row">
-      <!-- Sidebar Column -->
-      <div class="col-lg-3 mb-4">
-        <div class="list-group">
-          <a href="index.html" class="list-group-item">Home</a>
-          <a href="about.html" class="list-group-item">About</a>
-<!--          <a href="services.html" class="list-group-item">Services</a>-->
-          <a href="contact.html" class="list-group-item">Contact</a>
-          <a href="vulnerability_maps.html" class="list-group-item">Vulnerability Maps</a>
-          <a href="analytics_dashboard.html" class="list-group-item">2 Column Portfolio</a>
-          <a href="maps_hub-san_diego.html" class="list-group-item">3 Column Portfolio</a>
-          <a href="sharing_data.html" class="list-group-item">4 Column Portfolio</a>
-          <a href="other_map_and_data_sources.html" class="list-group-item">Single Portfolio Item</a>
-  <!--        <a href="blog-home-1.html" class="list-group-item">Blog Home 1</a>-->
-          <a href="coronavirus_updates.html" class="list-group-item">Blog Home 2</a>
-<!--          <a href="blog-post.html" class="list-group-item">Blog Post</a>
-          <a href="full-width.html" class="list-group-item">Full Width Page</a>
-          <a href="sidebar.html" class="list-group-item active">Sidebar Page</a>
-          <a href="faq.html" class="list-group-item">FAQ</a>-->
-          <a href="404.html" class="list-group-item">404</a>
-<!--          <a href="pricing.html" class="list-group-item">Pricing Table</a>-->
-        </div>
-      </div>
-      <!-- Content Column -->
-      <div class="col-lg-9 mb-4">
-        <h2>Section Heading</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta, et temporibus, facere perferendis veniam beatae non debitis, numquam blanditiis necessitatibus vel mollitia dolorum laudantium, voluptate dolores iure maxime ducimus fugit.</p>
-      </div>
+
     </div>
+
+      <div class="d-flex justify-content-center">
+        <h3><u>Content Coming Soon</u></h3>
+      </div>
+
+
+    <!-- /.row -->
+
+    <!-- Related Projects Row -->
+<!--    <h3 class="my-4">Related Projects</h3>
+
+    <div class="row">
+
+      <div class="col-md-3 col-sm-6 mb-4">
+        <a href="#">
+          <img class="img-fluid" src="http://placehold.it/500x300" alt="">
+        </a>
+      </div>
+
+      <div class="col-md-3 col-sm-6 mb-4">
+        <a href="#">
+          <img class="img-fluid" src="http://placehold.it/500x300" alt="">
+        </a>
+      </div>
+
+      <div class="col-md-3 col-sm-6 mb-4">
+        <a href="#">
+          <img class="img-fluid" src="http://placehold.it/500x300" alt="">
+        </a>
+      </div>
+
+      <div class="col-md-3 col-sm-6 mb-4">
+        <a href="#">
+          <img class="img-fluid" src="http://placehold.it/500x300" alt="">
+        </a>
+      </div>
+
+    </div>-->
     <!-- /.row -->
 
   </div>
+</div>
   <!-- /.container -->
 
   <!-- Footer -->
